@@ -71,4 +71,137 @@ const departments = {
     }
 }
 
-console.log(departments);
+
+// console.log(departments);
+// console.log("De afdeling Sales heeft " + departments.marketing.numberOfEmployees + " medewerkers");
+// console.log("Marketing is een leuke afdeling om te werken. " + departments.marketing.description);
+// console.log("De afdeling Customer Service heeft "+ departments["customer-service"].numberOfEmployees + " medewerkers" );
+// console.log("Sales is een uitdagende afdeling om te werken als Verkoopmanager. " + departments.sales.jobs[1].description)
+//
+
+
+const userInput = prompt("Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service]");
+console.log(userInput);
+
+if (userInput == "marketing") {
+    console.log(departments.marketing.description);
+    // gedeelte voor de tweede prompt
+    userInput1 = prompt("Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.  " +
+    "0: " + departments.marketing.jobs[0].title + "  " +
+    "1: " + departments.marketing.jobs[1].title + "  " +
+    "2: " + departments.marketing.jobs[2].title + "  " +
+    "3: " + departments.marketing.jobs[3].title + "  ");
+    console.log(userInput1);
+    switch (userInput1) {
+    case "0":
+        console.log("Je koos " + departments.marketing.jobs[0].title + ". Een uitdagende rol! " + departments.marketing.jobs[0].description);
+        break;
+    case "1":
+        console.log("Je koos " + departments.marketing.jobs[1].title + ". Een uitdagende rol! " + departments.marketing.jobs[1].description);
+        break;
+    case "2":
+        console.log("Je koos " + departments.marketing.jobs[2].title + ". Een uitdagende rol! " + departments.marketing.jobs[2].description);
+        break;
+    case "3":
+        console.log("Je koos " + departments.marketing.jobs[3].title + ". Een uitdagende rol! " + departments.marketing.jobs[3].description);
+        break;
+        default:
+        console.log("Please input a valid option");
+    }
+} else if (userInput == "sales") {
+    console.log(departments.sales.description);
+    // gedeelte voor de tweede prompt
+    userInput1 = prompt("Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.  " +
+        "0: " + departments.sales.jobs[0].title + "  " +
+        "1: " + departments.sales.jobs[1].title + "  " +
+        "2: " + departments.sales.jobs[2].title + "  " +
+        "3: " + departments.sales.jobs[3].title + "  ");
+    console.log(userInput1);
+    switch (userInput1) {
+        case "0":
+            console.log("Je koos " + departments.sales.jobs[0].title + ". Een uitdagende rol! " + departments.sales.jobs[0].description);
+            break;
+        case "1":
+            console.log("Je koos " + departments.sales.jobs[1].title + ". Een uitdagende rol! " + departments.sales.jobs[1].description);
+            break;
+        case "2":
+            console.log("Je koos " + departments.sales.jobs[2].title + ". Een uitdagende rol! " + departments.sales.jobs[2].description);
+            break;
+        case "3":
+            console.log("Je koos " + departments.sales.jobs[3].title + ". Een uitdagende rol! " + departments.sales.jobs[3].description);
+            break;
+        default:
+            console.log("Please input a valid option");
+    }
+} else if (userInput == "customer-service") {
+    console.log(departments["customer-service"].description);
+    // gedeelte voor de tweede prompt
+    userInput1 = prompt("Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.  " +
+        "0: " + departments["customer-service"].jobs[0].title + "  " +
+        "1: " + departments["customer-service"].jobs[1].title + "  " +
+        "2: " + departments["customer-service"].jobs[2].title + "  " +
+        "3: " + departments["customer-service"].jobs[3].title + "  ");
+    console.log(userInput1);
+    switch (userInput1) {
+        case "0":
+            console.log("Je koos " + departments["customer-service"].jobs[0].title + ". Een uitdagende rol! " + departments["customer-service"].jobs[0].description);
+            break;
+        case "1":
+            console.log("Je koos " + departments["customer-service"].jobs[1].title + ". Een uitdagende rol! " + departments["customer-service"].jobs[1].description);
+            break;
+        case "2":
+            console.log("Je koos " + departments["customer-service"].jobs[2].title + ". Een uitdagende rol! " + departments["customer-service"].jobs[2].description);
+            break;
+        case "3":
+            console.log("Je koos " + departments["customer-service"].jobs[3].title + ". Een uitdagende rol! " + departments["customer-service"].jobs[3].description);
+            break;
+        default:
+            console.log("Please input a valid option");
+    }
+} else {
+    console.log("choose a valid option");
+}
+
+
+// const userInput = "weet ik veel";
+//
+// switch(userInput) {
+//     case  "marketing":
+//         console.log(departments.marketing.description)
+//         break;
+//     case "sales" :
+//         console.log(departments.sales.description)
+//         break;
+//     case "customer-service" :
+//         console.log(departments["customer-service"].description)
+//         break;
+//     default:
+//         console.log("choose a valid input");
+// }
+
+
+// userInput = prompt("Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.  " +
+//     "0: " + departments.marketing.jobs[0].title + "  " +
+//     "1: " + departments.marketing.jobs[1].title + "  " +
+//     "2: " + departments.marketing.jobs[2].title + "  " +
+//     "3: " + departments.marketing.jobs[3].title + "  ");
+// console.log(userInput);
+//
+// const userInput = "2";
+//
+//     switch (userInput) {
+//         case "0":
+//             console.log("Je koos " + departments.marketing.jobs[0].title + ". Een uitdagende rol! " + departments.marketing.jobs[0].description);
+//             break;
+//         case "1":
+//             console.log("Je koos " + departments.marketing.jobs[1].title + ". Een uitdagende rol! " + departments.marketing.jobs[1].description);
+//             break;
+//         case "2":
+//             console.log("Je koos " + departments.marketing.jobs[2].title + ". Een uitdagende rol! " + departments.marketing.jobs[2].description);
+//             break;
+//         case "3":
+//             console.log("Je koos " + departments.marketing.jobs[3].title + ". Een uitdagende rol! " + departments.marketing.jobs[3].description);
+//             break;
+//         default:
+//             console.log("Please input a valid option");
+//     }
