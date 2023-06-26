@@ -95,15 +95,27 @@ if (userInput == "marketing") {
     switch (userInput1) {
     case "0":
         console.log("Je koos " + departments.marketing.jobs[0].title + ". Een uitdagende rol! " + departments.marketing.jobs[0].description);
+        document.getElementById('role-title').textContent = departments.marketing.jobs[0].title;
+        document.getElementById('department-description').textContent = departments.marketing.description;
+        document.getElementById('role-description').textContent = departments.marketing.jobs[0].description;
         break;
     case "1":
         console.log("Je koos " + departments.marketing.jobs[1].title + ". Een uitdagende rol! " + departments.marketing.jobs[1].description);
+        document.getElementById('role-title').textContent = departments.marketing.jobs[1].title;
+        document.getElementById('department-description').textContent = departments.marketing.description;
+        document.getElementById('role-description').textContent = departments.marketing.jobs[1].description;
         break;
     case "2":
         console.log("Je koos " + departments.marketing.jobs[2].title + ". Een uitdagende rol! " + departments.marketing.jobs[2].description);
+        document.getElementById('role-title').textContent = departments.marketing.jobs[2].title;
+        document.getElementById('department-description').textContent = departments.marketing.description;
+        document.getElementById('role-description').textContent = departments.marketing.jobs[2].description;
         break;
     case "3":
         console.log("Je koos " + departments.marketing.jobs[3].title + ". Een uitdagende rol! " + departments.marketing.jobs[3].description);
+        document.getElementById('role-title').textContent = departments.marketing.jobs[3].title;
+        document.getElementById('department-description').textContent = departments.marketing.description;
+        document.getElementById('role-description').textContent = departments.marketing.jobs[3].description;
         break;
         default:
         console.log("Please input a valid option");
@@ -120,15 +132,27 @@ if (userInput == "marketing") {
     switch (userInput1) {
         case "0":
             console.log("Je koos " + departments.sales.jobs[0].title + ". Een uitdagende rol! " + departments.sales.jobs[0].description);
+            document.getElementById('role-title').textContent = departments.sales.jobs[0].title;
+            document.getElementById('department-description').textContent = departments.sales.description;
+            document.getElementById('role-description').textContent = departments.sales.jobs[0].description;
             break;
         case "1":
             console.log("Je koos " + departments.sales.jobs[1].title + ". Een uitdagende rol! " + departments.sales.jobs[1].description);
+            document.getElementById('role-title').textContent = departments.sales.jobs[1].title;
+            document.getElementById('department-description').textContent = departments.sales.description;
+            document.getElementById('role-description').textContent = departments.sales.jobs[1].description;
             break;
         case "2":
             console.log("Je koos " + departments.sales.jobs[2].title + ". Een uitdagende rol! " + departments.sales.jobs[2].description);
+            document.getElementById('role-title').textContent = departments.sales.jobs[2].title;
+            document.getElementById('department-description').textContent = departments.sales.description;
+            document.getElementById('role-description').textContent = departments.sales.jobs[2].description;
             break;
         case "3":
             console.log("Je koos " + departments.sales.jobs[3].title + ". Een uitdagende rol! " + departments.sales.jobs[3].description);
+            document.getElementById('role-title').textContent = departments.sales.jobs[3].title;
+            document.getElementById('department-description').textContent = departments.sales.description;
+            document.getElementById('role-description').textContent = departments.sales.jobs[3].description;
             break;
         default:
             console.log("Please input a valid option");
@@ -145,15 +169,27 @@ if (userInput == "marketing") {
     switch (userInput1) {
         case "0":
             console.log("Je koos " + departments["customer-service"].jobs[0].title + ". Een uitdagende rol! " + departments["customer-service"].jobs[0].description);
+            document.getElementById('role-title').textContent = departments["customer-service"].jobs[0].title;
+            document.getElementById('department-description').textContent = departments["customer-service"].description;
+            document.getElementById('role-description').textContent = departments["customer-service"].jobs[0].description;
             break;
         case "1":
             console.log("Je koos " + departments["customer-service"].jobs[1].title + ". Een uitdagende rol! " + departments["customer-service"].jobs[1].description);
+            document.getElementById('role-title').textContent = departments["customer-service"].jobs[1].title;
+            document.getElementById('department-description').textContent = departments["customer-service"].description;
+            document.getElementById('role-description').textContent = departments["customer-service"].jobs[1].description;
             break;
         case "2":
             console.log("Je koos " + departments["customer-service"].jobs[2].title + ". Een uitdagende rol! " + departments["customer-service"].jobs[2].description);
+            document.getElementById('role-title').textContent = departments["customer-service"].jobs[2].title;
+            document.getElementById('department-description').textContent = departments["customer-service"].description;
+            document.getElementById('role-description').textContent = departments["customer-service"].jobs[2].description;
             break;
         case "3":
             console.log("Je koos " + departments["customer-service"].jobs[3].title + ". Een uitdagende rol! " + departments["customer-service"].jobs[3].description);
+            document.getElementById('role-title').textContent = departments["customer-service"].jobs[3].title;
+            document.getElementById('department-description').textContent = departments["customer-service"].description;
+            document.getElementById('role-description').textContent = departments["customer-service"].jobs[3].description;
             break;
         default:
             console.log("Please input a valid option");
@@ -161,47 +197,3 @@ if (userInput == "marketing") {
 } else {
     console.log("choose a valid option");
 }
-
-
-// const userInput = "weet ik veel";
-//
-// switch(userInput) {
-//     case  "marketing":
-//         console.log(departments.marketing.description)
-//         break;
-//     case "sales" :
-//         console.log(departments.sales.description)
-//         break;
-//     case "customer-service" :
-//         console.log(departments["customer-service"].description)
-//         break;
-//     default:
-//         console.log("choose a valid input");
-// }
-
-
-// userInput = prompt("Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.  " +
-//     "0: " + departments.marketing.jobs[0].title + "  " +
-//     "1: " + departments.marketing.jobs[1].title + "  " +
-//     "2: " + departments.marketing.jobs[2].title + "  " +
-//     "3: " + departments.marketing.jobs[3].title + "  ");
-// console.log(userInput);
-//
-// const userInput = "2";
-//
-//     switch (userInput) {
-//         case "0":
-//             console.log("Je koos " + departments.marketing.jobs[0].title + ". Een uitdagende rol! " + departments.marketing.jobs[0].description);
-//             break;
-//         case "1":
-//             console.log("Je koos " + departments.marketing.jobs[1].title + ". Een uitdagende rol! " + departments.marketing.jobs[1].description);
-//             break;
-//         case "2":
-//             console.log("Je koos " + departments.marketing.jobs[2].title + ". Een uitdagende rol! " + departments.marketing.jobs[2].description);
-//             break;
-//         case "3":
-//             console.log("Je koos " + departments.marketing.jobs[3].title + ". Een uitdagende rol! " + departments.marketing.jobs[3].description);
-//             break;
-//         default:
-//             console.log("Please input a valid option");
-//     }
